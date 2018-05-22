@@ -1,0 +1,40 @@
+/XT +
+/SP +
+# Object modules
+# used by the program
+# go in this window
+#
+# No overlays are
+# used in this example
+dbu +
+dbuview +
+dbustru +
+dbuedit +
+dbuindx +
+dbucopy +
+dbuutil +
+dbuhelp +
+# Use the incremental
+# link options for
+# subsecond links!
+,
+DBU,
+,
+# Libraries used by
+# the program go in
+# this window
+#
+# Standard Clipper
+# libraries
+extend +
+clipper +
+# Uncomment the
+# following two lines
+# if you are using
+# Clipper 5.x to
+# link in those
+# library files by
+# removing the # sign
+# terminal+
+# dbfntx +
+

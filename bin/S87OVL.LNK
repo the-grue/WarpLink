@@ -1,0 +1,63 @@
+/W0 +
+/XT +
+/OP:M +
+/R +
+/OHP:-512 +
+/OHT:-512 +
+/SP +
+# List Clipper
+# object modules here
+# before the overlay
+# manager.
+# Overlay the modules
+# by placing them in
+# parentheses.
+#
+# Don't forget to
+# set other link
+# options to speed up
+# link times or give
+# the program more
+# free memory.
+#
+# Overlay manager
+ovlmgr +
+,
+,
+,
+# This is a list of
+# overlayable CLIPPER.LIB
+# modules and the
+# format that you use
+# to place them in
+# overlays
+#
+(CLIPPER:errsys) +
+(CLIPPER:db) +
+(CLIPPER:dbsdf) +
+(CLIPPER:set) +
+#
+# Overlaying NTX makes
+# re-indexing operate
+# very slowly, but it
+# saves 10K memory.
+# Remove the '#' from
+# the beginning of
+# following line to
+# overlay the NTX module
+#(CLIPPER:ntx)+
+(CLIPPER:icreate) +
+(CLIPPER:macro) +
+(CLIPPER:csupport) +
+(CLIPPER:report) +
+(CLIPPER:sort) +
+(CLIPPER:sortof) +
+(CLIPPER:errorsys) +
+(CLIPPER:dvc) +
+(CLIPPER:dbmemo) +
+# Rest of CLIPPER.LIB
+# goes in the root.
+clipper +
+# Overlay all of EXTEND.LIB
+(extend) +
+

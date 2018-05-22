@@ -1,0 +1,111 @@
+/W0 +
+/XT +
+/CLP5 +
+/OP:M +
+/R +
+/OHP:-512 +
+/OHT:-512 +
+/SP +
+# List Clipper
+# object modules here
+# before the overlay
+# manager.
+# Overlay the modules
+# by placing them in
+# parentheses.
+#
+# Don't forget to
+# set other link
+# options to speed up
+# link times or give
+# the program more
+# free memory.
+# For example, try
+# /ou, /ox, or /ql
+#
+# Overlay manager
+c5ovlmgr +
+,
+,
+,
+# This is a list of
+# several overlayable
+# CLIPPER.LIB modules
+# and the format that
+# you use to place
+# them in overlays
+#
+# Use the /ql option
+# to greatly increase
+# link speed with
+# direct module
+# specification
+#
+# If you experience
+# program slowdown
+# using this setup,
+# try profiling
+# CLIPPER.LIB and
+# removing the slow
+# modules from
+# overlays
+#
+(CLIPPER:APPINIT) +
+(CLIPPER:COLOR) +
+(CLIPPER:DATE) +
+(CLIPPER:DBCMD0) +
+(CLIPPER:DBCMD1) +
+(CLIPPER:DBCMD2) +
+(CLIPPER:DBCMD3) +
+(CLIPPER:DBCMD4) +
+(CLIPPER:DBCREATE) +
+(CLIPPER:DBGAPI) +
+(CLIPPER:DBGSHADO) +
+(CLIPPER:DBSTRUCT) +
+(CLIPPER:DLM1) +
+(CLIPPER:ERRSYS0) +
+(CLIPPER:ERRSYS1) +
+(CLIPPER:GETS0) +
+(CLIPPER:GETS1) +
+(CLIPPER:GETS2) +
+(CLIPPER:INITEXIT) +
+(CLIPPER:JOINLIST) +
+(CLIPPER:MRELEASE) +
+(CLIPPER:MSAVE) +
+(CLIPPER:OUTSTD) +
+(CLIPPER:PHILES) +
+(CLIPPER:RDDORD) +
+(CLIPPER:RDDSVR) +
+(CLIPPER:SAVEREST) +
+(CLIPPER:SDF1) +
+(CLIPPER:SORTOF) +
+(CLIPPER:TXOPEN) +
+(CLIPPER:WORKAREA) +
+#
+# Rest of CLIPPER.LIB
+# goes in the root.
+clipper +
+# Overlay all of
+# EXTEND.LIB, if the
+# program runs too
+# slowly, try forcing
+# the LINELEN module
+# into the root by
+# uncommenting the
+# following line
+# EXTEND:LINELEN +
+# You may also try
+# forcing the
+# TBROWSE0 and
+# TBROWSE1 modules
+# into the root by
+# uncommenting the
+# following lines:
+# EXTEND:TBROWSE0 +
+# EXTEND:TBROWSE1 +
+(extend) +
+# TERMINAL.LIB
+terminal +
+# DBFNTX.LIB
+dbfntx +
+

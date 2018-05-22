@@ -1,0 +1,28 @@
+/W0 +
+/XT +
+/CLA +
+/OP:M +
+/OHP:4096 +
+/OHT:4096 +
+# Standard Clarion
+# object modules
+clarion +
+clarion0 +
+# List Clarion
+# object modules here
+# before the overlay
+# manager.
+# Overlay the modules
+# by placing them in
+# parentheses.
+#
+# Clarion overlay manager
+cnovlmgr +
+,
+,
+,
+# Standard Clarion
+# libraries
+clarion1 +
+clarion2 +
+

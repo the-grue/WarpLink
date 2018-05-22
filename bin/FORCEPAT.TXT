@@ -1,0 +1,9 @@
+Put FORCEPAT.OBJ first in the object module link list.
+
+Technical explanation:  FORCEPAT.OBJ ensures that the start of the
+segment $S_SETUP_DATA is paragraph aligned in a program, even though it
+is normally a byte aligned segment.  Force requires that $S_SETUP_DATA
+start on a paragraph boundary, but when using overlays WarpLink will
+place segments before the $S_SETUP_DATA segment in the program.  This
+can cause a nonparagraph alignment.
+
